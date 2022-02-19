@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c, add, sub, mul;
+    float div;
+    printf("Input the values of a and b\n");
+    scanf("%d%d", &a, &b);
+    printf("Enter your choice:\n 1=Addition\n 2=Subtract\n 3=Multiplication\n 4=Division\n \n");
+
+    scanf("%d", &c);
+
+    switch (c)
+    {
+    case 1:
+        add = a + b;
+        printf("Addition of a and b is %d", add);
+        break;
+
+    case 2:
+        sub = a - b;
+        printf("Subtraction of a and b is %d", sub);
+        break;
+
+    case 3:
+        mul = a * b;
+        printf("Multiplication of a and b is %d", mul);
+        break;
+
+    case 4:
+        div =(float) a / b;
+        printf("Division of two numbers is %f", div);
+        break;
+
+    default:
+        printf("You have entered the wrong choice");
+    }
+    return 0;
+}
